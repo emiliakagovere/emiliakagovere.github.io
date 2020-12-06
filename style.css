@@ -1,0 +1,111 @@
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes animation {
+  0% {margin-left: 0px;}
+  50% {margin-left: 10px;}
+  100% {margin-left: 0px;}
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 130vw;
+}
+
+.logo {
+  display: block;
+width: 350px;
+height: auto;
+margin: 0 auto;
+padding-bottom: 10px;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.uleminemenuu a {
+  font-family: BrownStd;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+  letter-spacing: 0.19em;
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  flex-basis: auto;
+}
+
+a:hover {
+  color: grey;
+  animation: animation 1s infinite;
+}
+
+.uleminemenuu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.pilt1 {
+  position: absolute;
+  width: 1201.51px;
+height: 796px;
+left: 10vw;
+}
+
+
+#RETAILERS p {
+  font-size: 30px;
+    margin: 0;
+    display: inline;
+  }
+
+section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .col-3 {
+    flex-basis: auto;
+    width: 33.33%;
+    font-family: BrownStd;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    /* line-height: 36px; */
+    letter-spacing: 0.19em;
+    padding-top: 200px;
+    text-align: inherit;
+  }
+#RETAILERS {
+  padding: 65px;
+}
+#CONTACT a {
+  font-family: BrownStd;
+  color: black;
+  font-size: 70px;
+  text-decoration: none;
+  color: black;
+  padding: 250px;
+}
+.email {
+  flex-basis: auto;
+  width: 50%;
+}
+.copy {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+}
+}
