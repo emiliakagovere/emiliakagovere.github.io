@@ -1,12 +1,24 @@
-
 * {
   box-sizing: border-box;
 }
 
 @keyframes animation {
-  0% {margin-left: 0px;}
-  50% {margin-left: 10px;}
-  100% {margin-left: 0px;}
+  0% {
+    margin-left: 0px;
+  }
+
+  50% {
+    margin-left: 10px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -14,20 +26,20 @@ html {
 }
 
 body {
-  width: 100vw;
-  height: 130vw;
+  width: 100%;
 }
 
 .logo {
-  display: block;
-width: 350px;
-height: auto;
-margin: 0 auto;
-padding-bottom: 10px;
+  display: flex;
+  height: auto;
+  padding-bottom: 10px;
+  justify-content: center;
 }
+
 .logo img {
-  height: 100%;
-  width: 100%;
+  /* height: 100%;
+  width: 100%; */
+  flex-basis: auto;
 }
 
 .uleminemenuu a {
@@ -51,45 +63,51 @@ a:hover {
 }
 
 .uleminemenuu {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
 }
 
 .pilt1 {
-  position: absolute;
-  width: 1201.51px;
-height: 796px;
-left: 10vw;
+  width: 80%;
+  height: 100vh;
+  margin: 10%;
+  background-size: cover;
+  z-index: -1;
 }
-
 
 #RETAILERS p {
   font-size: 30px;
-    margin: 0;
-    display: inline;
-  }
+  margin: 0;
+  display: inline;
+}
 
 section {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .col-3 {
-    flex-basis: auto;
-    width: 33.33%;
-    font-family: BrownStd;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    /* line-height: 36px; */
-    letter-spacing: 0.19em;
-    padding-top: 200px;
-    text-align: inherit;
-  }
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+.col-3 {
+  flex-basis: auto;
+  width: 33.33%;
+  font-family: BrownStd;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  /* line-height: 36px; */
+  letter-spacing: 0.19em;
+  text-align: inherit;
+}
+
 #RETAILERS {
   padding: 65px;
 }
+
 #CONTACT a {
   font-family: BrownStd;
   color: black;
@@ -98,14 +116,25 @@ section {
   color: black;
   padding: 250px;
 }
+
 .email {
   flex-basis: auto;
-  width: 50%;
+width: 100%;
 }
+
+#ACCESSORIES img {
+  width: 100%;
+}
+
 .copy {
   display: block;
   width: 100%;
   text-align: center;
-  padding: 50px;
+  padding: 250px;
 }
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }
