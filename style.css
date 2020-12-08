@@ -82,6 +82,7 @@ a:hover {
   font-size: 30px;
   margin: 0;
   display: inline;
+  white-space: pre;
 }
 
 section {
